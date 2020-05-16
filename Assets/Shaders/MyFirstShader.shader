@@ -4,16 +4,13 @@
     {
         _EmitColor ("Emmit Color", Color) = (1,1,1,1)
         _AlbedoColor ("Albedo Color", Color) = (1,1,1,1)
+        _NormalColor ("Normal Color", Color) = (1,1,1,1)
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
-        LOD 200
-
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Lambert
-
 
         struct Input
         {
@@ -22,12 +19,14 @@
 
         fixed4 _EmitColor;
         fixed4 _AlbedoColor;
+        fixed4 _NormalColor;
 
 
         void surf (Input IN, inout SurfaceOutput o)
         {
             o.Albedo = _AlbedoColor.rgb;
             o.Emission = _EmitColor.rgb;
+            o.Normal = _NormalColor.rgb;
         }
         ENDCG
     }
