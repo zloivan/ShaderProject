@@ -4,10 +4,11 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: HelloShader
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 8a41de93228bcac409c6e21c0d3a9056, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,6 +74,13 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - _AlbCollor: {r: 0.4433962, g: 0.2488875, b: 0.2488875, a: 1}
+    - _AlbedoColor: {r: 0.8773585, g: 0.22761661, b: 0.2744811, a: 1}
     - _AmbientColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.091, g: 0, b: 0.68275833, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmitCollor: {r: 0.6037736, g: 0.48131007, b: 0.48131007, a: 1}
+    - _EmitColor: {r: 0.19428623, g: 0.6981132, b: 0.26145253, a: 1}
+    - myAlbedoColor: {r: 0.5377358, g: 0.4895425, b: 0.4895425, a: 1}
+    - myColor: {r: 0.37753648, g: 0.7924528, b: 0.4332543, a: 1}
+    - myEmmitColor: {r: 0.4811321, g: 0.37900499, b: 0.37900499, a: 1}
