@@ -27,8 +27,9 @@
 
         void surf (Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = (tex2D(_defuseTex,IN.uv_defuseTex) * _intenceDefuse).rgb;
-            o.Normal = UnpackNormal(tex2D(_normalTex,IN.uv_normalTex));
+            o.Albedo = (tex2D(_defuseTex, IN.uv_defuseTex * _intenceDefuse )).rgb;
+            o.Normal = UnpackNormal(tex2D(_normalTex, IN.uv_normalTex * _intenceDefuse));
+
             o.Normal *= float3(_intenceNormal,_intenceNormal,1);
         }
         ENDCG
