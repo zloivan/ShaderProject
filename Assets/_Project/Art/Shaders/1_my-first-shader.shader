@@ -24,8 +24,8 @@ Shader "ShaderTutorials/1_my-first-shader"
         void surf(Input IN, inout SurfaceOutput o)
         {
             o.Emission = _myEmission.rgb;
-            o.Albedo = _myColour.rgb;
-            o.Normal = _myNormal.rgb;
+            o.Albedo = _myColour;
+            o.Normal = _myNormal;
         }
         ENDCG
     }
