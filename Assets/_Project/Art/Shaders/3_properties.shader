@@ -34,7 +34,7 @@ Shader "ShaderTutorials/3_properties"
 
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo.rgb = (tex2D(_myTexture, IN.uv_myTexture) * _myRange).rgb * _myColour2.rgb;
+            o.Albedo.rgb = half3(tex2D(_myTexture, IN.uv_myTexture).r, 1, tex2D(_myTexture, IN.uv_myTexture).b);
             o.Emission.rgb = (texCUBE(_myCube, IN.worldRefl) * _myRange2).rgb;
         }
         ENDCG

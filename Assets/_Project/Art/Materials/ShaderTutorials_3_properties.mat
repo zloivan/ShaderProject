@@ -44,10 +44,11 @@ Material:
     - _Glossiness: 0.5
     - _Metallic: 0
     - _myFloat: 0.5
-    - _myRange: 0.58
-    - _myRange2: 0.33
+    - _myRange: 1.45
+    - _myRange2: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _myColour: {r: 1, g: 1, b: 1, a: 1}
+    - _myColour2: {r: 1, g: 1, b: 1, a: 1}
     - _myVector: {r: 0.5, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
